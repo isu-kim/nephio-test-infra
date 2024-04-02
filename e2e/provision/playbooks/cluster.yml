@@ -74,6 +74,7 @@
         name: andrewrothstein.podman
       when: container_engine == "podman"
     - name: Install KinD command-line
+      when: kind.enabled
       ansible.builtin.include_role:
         name: andrewrothstein.kind
       vars:
