@@ -14,7 +14,7 @@ Available variables are listed below, along with default values (see defaults/ma
 
 | Variable                   | Required | Default       | Choices | Comments                                                               |
 |----------------------------|----------|---------------|---------|------------------------------------------------------------------------|
-| k8s.context                | no       | kind-kind     |         | Kubernetes context to create resources                                 |
+| k8s.context                | no       | kubernetes-admin@kubernetes     |         | Kubernetes context to create resources                                 |
 | nephio_pkg_version         | no       | v1.0.1        |         | Default version for all kpt packages                                   |
 | nephio.k8s.namespaces      | no       |               |         | List of Kubernetes namespaces to watch for Nephio deployment resources |
 | nephio.kpt.packages        | no       |               |         | List of Nephio kpt packages to be upgraded                             |

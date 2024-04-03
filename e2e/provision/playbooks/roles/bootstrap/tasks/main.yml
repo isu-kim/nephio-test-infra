@@ -21,10 +21,6 @@
 - name: Force all notified handlers to run at this point
   ansible.builtin.meta: flush_handlers
 
-- name: Create Management KinD Cluster
-  ansible.builtin.include_tasks: create-mgmt.yml
-  when: kind.enabled
-
 - name: Apply kpt packages
   ansible.builtin.include_tasks: apply-pkgs.yml
 

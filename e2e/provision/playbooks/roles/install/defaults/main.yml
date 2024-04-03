@@ -9,7 +9,7 @@
 ##############################################################################
 
 k8s:
-  context: kind-kind
+  context: kubernetes-admin@kubernetes
 
 gitea:
   k8s:
