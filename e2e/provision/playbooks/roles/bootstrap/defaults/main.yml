@@ -114,7 +114,7 @@ metallb:
         version: "{{ nephio_catalog_revision }}"
         async: 1020
         poll: 5
-      - repo_uri: "{{ https://github.com/isu-kim/catalog.git }}"
+      - repo_uri: "https://github.com/isu-kim/catalog.git"
         pkg: distros/sandbox/metallb-sandbox-config
         version: "{{ nephio_catalog_revision }}"
         async: 660
