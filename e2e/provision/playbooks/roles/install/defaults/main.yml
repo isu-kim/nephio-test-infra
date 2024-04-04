@@ -21,23 +21,23 @@ nephio_catalog_branch: main
 
 nephio_stock_repos:
   - name: catalog-distros-sandbox
-    repo: "https://github.com/nephio-system/catalog.git"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /distros/sandbox
     branch: "{{ nephio_catalog_branch }}"
   - name: catalog-workloads-free5gc
-    repo: "https://github.com/nephio-system/catalog.git"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /workloads/free5gc
     branch: "{{ nephio_catalog_branch }}"
   - name: catalog-infra-capi
-    repo: "https://github.com/nephio-system/catalog.git"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /infra/capi
     branch: "{{ nephio_catalog_branch }}"
   - name: catalog-nephio-core
-    repo: "https://github.com/nephio-system/catalog.git"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /nephio/core
     branch: "{{ nephio_catalog_branch }}"
   - name: catalog-nephio-optional
-    repo: "https://github.com/nephio-system/catalog.git"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /nephio/optional
     branch: "{{ nephio_catalog_branch }}"
   - name: oai-core-packages
@@ -45,11 +45,11 @@ nephio_stock_repos:
     directory: /
     branch: r2
   - name: catalog-workloads-oai-ran
-    repo: "https://github.com/nephio-system/catalog.git"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /workloads/oai
     branch: "{{ nephio_catalog_branch }}"
   - name: catalog-workloads-tools
-    repo: "https://github.com/nephio-system/catalog.git"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /workloads/tools
     branch: "{{ nephio_catalog_branch }}"
 
