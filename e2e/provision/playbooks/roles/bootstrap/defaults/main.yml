@@ -44,7 +44,7 @@ gitea:
       - gitea
   kpt:
     packages:
-      - repo_uri: "{{ nephio_catalog_repo_uri }}"
+      - repo_uri: "https://github.com/isu-kim/catalog.git"
         pkg: distros/sandbox/gitea
         version: "{{ nephio_catalog_revision }}"
         async: 780
