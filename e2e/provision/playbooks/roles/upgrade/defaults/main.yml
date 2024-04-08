@@ -9,7 +9,7 @@
 ##############################################################################
 
 k8s:
-  context: kubernetes-admin@kubernetes
+  context: kubernetes-admin@mgmt
 
 nephio_pkg_version: v1.0.1
 
