@@ -43,7 +43,7 @@ None
         pkg: package-examples/nginx
         repo_uri: https://github.com/GoogleContainerTools/kpt
         version: v0.9
-        context: kind-kind
+        context: kubernetes-admin@mgmt
         kpt_async: 600
         kpt_poll: 5
 ```

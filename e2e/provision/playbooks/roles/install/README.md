@@ -14,7 +14,7 @@ Available variables are listed below, along with default values (see defaults/ma
 
 | Variable                   | Required | Default                                                       | Choices | Comments                                                                |
 |----------------------------|----------|---------------------------------------------------------------|---------|-------------------------------------------------------------------------|
-| k8s.context                | no       | kind-kind                                                     |         | Kubernetes context to create resources                                  |
+| k8s.context                | no       | kubernetes-admin@mgmt                                         |         | Kubernetes context to create resources                                  |
 | gitea.k8s.username         | no       | nephio                                                        |         | Gitea admin user name                                                   |
 | gitea.k8s.password         | no       | secret                                                        |         | Gitea admin password                                                    |
 | nephio_catalog_repo_uri    | no       | https://github.com/nephio-project/catalog.git                 |         | Default kpt catalog packages repository                                 |

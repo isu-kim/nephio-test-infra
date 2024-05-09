@@ -73,16 +73,6 @@
       ansible.builtin.include_role:
         name: andrewrothstein.podman
       when: container_engine == "podman"
-    - name: Install KinD command-line
-      ansible.builtin.include_role:
-        name: andrewrothstein.kind
-      vars:
-        kind_config:
-          sysctl:
-            fs.inotify.max_user_watches: 524288
-            fs.inotify.max_user_instances: 512
-            kernel.keys.maxkeys: 500000
-            kernel.keys.maxbytes: 1000000
     - name: Install kubectl command-line
       ansible.builtin.include_role:
         name: andrewrothstein.kubectl

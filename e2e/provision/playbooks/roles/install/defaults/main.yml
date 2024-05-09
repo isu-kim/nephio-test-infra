@@ -8,8 +8,7 @@
 # http://www.apache.org/licenses/LICENSE-2.0
 ##############################################################################
 
-k8s:
-  context: kind-kind
+k8s:  context: kubernetes-admin@mgmt
 
 gitea:
   k8s:
@@ -21,23 +20,23 @@ nephio_catalog_branch: main
 
 nephio_stock_repos:
   - name: catalog-distros-sandbox
-    repo: "{{ nephio_catalog_repo_uri }}"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /distros/sandbox
     branch: "{{ nephio_catalog_branch }}"
   - name: catalog-workloads-free5gc
-    repo: "{{ nephio_catalog_repo_uri }}"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /workloads/free5gc
     branch: "{{ nephio_catalog_branch }}"
   - name: catalog-infra-capi
-    repo: "{{ nephio_catalog_repo_uri }}"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /infra/capi
     branch: "{{ nephio_catalog_branch }}"
   - name: catalog-nephio-core
-    repo: "{{ nephio_catalog_repo_uri }}"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /nephio/core
     branch: "{{ nephio_catalog_branch }}"
   - name: catalog-nephio-optional
-    repo: "{{ nephio_catalog_repo_uri }}"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /nephio/optional
     branch: "{{ nephio_catalog_branch }}"
   - name: oai-core-packages
@@ -45,11 +44,11 @@ nephio_stock_repos:
     directory: /
     branch: r2
   - name: catalog-workloads-oai-ran
-    repo: "{{ nephio_catalog_repo_uri }}"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /workloads/oai
     branch: "{{ nephio_catalog_branch }}"
   - name: catalog-workloads-tools
-    repo: "{{ nephio_catalog_repo_uri }}"
+    repo: "https://github.com/nephio-project/catalog.git"
     directory: /workloads/tools
     branch: "{{ nephio_catalog_branch }}"
 
@@ -90,6 +89,6 @@ nephio_webui:
     namespace: nephio-webui
   kpt:
     package:
-      repo_uri: "{{ nephio_catalog_repo_uri }}"
+      repo_uri: "https://github.com/nephio-project/catalog.git"
       pkg: nephio/optional/webui
       version: main
